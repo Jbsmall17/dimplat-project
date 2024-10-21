@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/8d3b9090a8.js" crossorigin="anonymous"></script>
+  <title>Intro component with signup form master</title>
+</head>
+<body>
+  <div class="main-container">
+    <div>
+      <p class="para1">Learn to code by<br /> watching others</p>
+      <p class="para2">see how experienced developers solve probelms
+        in real-time<br /> watching scripted tutorials is great, but understanding
+        how<br /> developers think is invaluable.
+      </p>
+    </div>
+    <div>
+      <div class="trial-div">
+        <p>Try it free 7 days <span>then $20/mo thereafter</span></p>
+      </div>
+      <form action="">
+        <div>
+          <input 
+            placeholder="First Name"
+            type="text"
+          />
+          <i class="fa-solid fa-circle-exclamation error"></i>
+          <p>First Name cannot by empty</p>
+        </div>
+        <div>
+          <input 
+            placeholder="Last Name"
+            type="text"
+          />
+          <i class="fa-solid fa-circle-exclamation error"></i>
+          <p>Last Name cannot by empty</p>
+        </div>
+        <div>
+          <input 
+            placeholder="Email Address"
+            type="email"
+          />
+          <i class="fa-solid fa-circle-exclamation error"></i>
+          <p>Looks like it is not an email</p>
+        </div>
+        <div>
+          <input 
+            placeholder="Password"
+            type="password"
+          />
+          <i class="fa-solid fa-circle-exclamation error"></i>
+          <p>password cannot by empty</p>
+        </div>
+        <button type="submit">
+          <p>CLAIM YOUR FREE TRIAL</p>
+        </button>
+        <p class="terms-and-condition">
+          by clicking the button, you are agreeing to our 
+          <span> Terms and Services</span>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
