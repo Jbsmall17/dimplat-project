@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: hsl(275, 100%, 97%);
+}
+div.bg-class{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 35vh;
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-size: contain;
+}
+
+div.card{
+    position: fixed;
+    width:90%;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 8px;
+    background-color: white;
+    padding: 16px;
+}
+
+div.title-div{
+    display: flex;
+    gap:16px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+div.qa-div{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+div.qa-div:last-child{
+    border-bottom: none;
+}
+
+div.qa-div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+div.qa-div > div > p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p.answer{
+    font-size: 14px;
+    color: hsl(292, 16%, 49%);
+}
+
+div.qa-div.active p.answer{
+    display: block;
+}
+
+div.qa-div p.answer{
+    display: none;
+}
+
+div.qa-div.active img.plus, div.qa-div img.minus {
+    display: none;
+}
+
+div.qa-div.active img.minus, div.qa-div img.plus{
+    display: block;
+}
+
+
+@media screen and (max-width:425px) {
+    div.qa-div > div > p{
+        font-size: 14px;
+    }
+    div.qa-div img{
+        width:24px;
+        height: 24px;
+    }
+    p.answer{
+        font-size: 12px;
+    }
+}
